@@ -1,6 +1,6 @@
 const mongoose = require("mongoose");
 
-const db = process.env.MONGO_URL || "mongodb://localhost:27017";
+const db = process.env.MONGO_URL || "mongodb://localhost:27017/SocialLink";
 
 const connectDB = async () => {
   try {
