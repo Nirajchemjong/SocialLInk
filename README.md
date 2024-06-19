@@ -1,9 +1,10 @@
-# MERN Template
+# SocialLink
 
-This is a template for a full-stack application using the **MERN stack** (MongoDB, Express.js, React.js, Node.js). This template includes a basic setup for both the backend and frontend, allowing for quick and easy project initialization.
+SocialLink is a platform that allows users to create a single link that directs to a personalized landing page containing links to their various social media profiles, websites, or other online content. This is especially useful on platforms like Instagram or Twitter, where you can only have one bio link.
 
 ## Table of Contents
 
+- [Features](#features)
 - [Installation](#installation)
 - [Usage](#usage)
 - [Project Structure](#project-structure)
@@ -11,14 +12,37 @@ This is a template for a full-stack application using the **MERN stack** (MongoD
 - [Contributing](#contributing)
 - [License](#license)
 
+## Features
+
+- **User Authentication and Profile Management**:
+
+  - Sign up, login, logout, and password reset.
+  - Profile creation and management (name, bio, profile picture).
+
+- **Link Management**:
+
+  - Add, edit, and delete links.
+  - Select from a list of popular social media platforms and websites.
+  - Customizable titles, URLs, and descriptions.
+  - Reorder links through a drag-and-drop interface (optional).
+
+- **Profile Sharing**:
+
+  - Unique URL for each user (e.g., `sociallink.com/username`).
+  - Public profiles viewable by anyone with the URL.
+  - Generate a short link for easy sharing.
+
+- **Customizable Themes**:
+  - Users can choose from various themes or customize the appearance of their profile page.
+
 ## Installation
 
 To get started with this project, follow these steps:
 
-## Clone the repository
+### Clone the repository
 
-git clone https://github.com/yourusername/mern-template.git
-cd mern-template
+git clone https://github.com/yourusername/sociallink.git
+cd sociallink
 
 ## Install backend dependencies:
 
