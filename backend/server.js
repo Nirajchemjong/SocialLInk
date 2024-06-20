@@ -10,6 +10,15 @@ app.use(express.json());
 
 const PORT = process.env.PORT || 5050;
 
+/* 
+All routes here start
+*/
+
+
+
+/* Routes ends here  */
+
+
 app.use("/api", require("./routes/api"));
 
 const startServer = async () => {
