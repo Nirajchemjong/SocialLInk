@@ -1,9 +1,13 @@
 const express = require("express");
+const userRouter = express.Router();
+const registerationController = require("../controller/user/registerationController");
 
-const router = express.Router();
-
-router.get("/", (res, req) => {
-  return res.json({
+userRouter.get("/", (req, res) => {
+  res.json({
     message: "user route open",
   });
 });
+
+userRouter.post("/", registerationController.createUser);
+
+module.exports = userRouter;
