@@ -2,7 +2,7 @@ const express = require("express");
 const cors = require("cors");
 const dotenv = require("dotenv");
 const connectDB = require("./config/db");
-
+const testApi = require("./routes/api");
 const app = express();
 dotenv.config();
 app.use(cors());
@@ -13,13 +13,9 @@ const PORT = process.env.PORT || 5050;
 /* 
 All routes here start
 */
-
-
+app.use("/api/v1/test", testApi);
 
 /* Routes ends here  */
-
-
-app.use("/api", require("./routes/api"));
 
 const startServer = async () => {
   try {

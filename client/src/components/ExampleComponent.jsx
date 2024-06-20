@@ -6,7 +6,7 @@ function ExampleComponent() {
 
   useEffect(() => {
     axios
-      .get("/api")
+      .get("/api/v1/test")
       .then((response) => setData(response.data))
       .catch((error) => console.error(error));
   }, []);
