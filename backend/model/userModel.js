@@ -6,6 +6,8 @@ const userSchema = new mongoose.Schema(
     lname: { type: String, required: true },
     email: { type: String, required: true },
     password: { type: String, required: true },
+    isVerified: { type: Boolean, default: false },
+    status: { type: String, default: "inactive", required: true },
   },
   {
     timestamps: true,

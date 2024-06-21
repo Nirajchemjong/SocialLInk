@@ -1,6 +1,5 @@
 {
-  "watch": ["backend/server.js", "backend/routes", "backend/config"],
+  "watch": ["backend/**/*"],
   "ext": "js,json",
-  "ignore": ["node_modules"],
-  "exec": "node backend/server.js"
+  "ignore": ["backend/node_modules"]
 }
